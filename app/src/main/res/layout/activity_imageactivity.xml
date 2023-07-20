@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+
+    tools:context=".Imageactivity">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="226dp"
+        android:layout_height="211dp"
+
+        android:contentDescription="rohit image"
+        android:elevation="@dimen/_10sdp"
+        android:layout_marginLeft="-60dp"
+        android:layout_marginTop="-50dp"
+        android:padding="@dimen/_50sdp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name" />
+
+
+</LinearLayout>
